@@ -1,0 +1,3 @@
+This program checks whether an integer array contains duplicate elements such that the difference between their indices is less than or equal to a given value k. It takes an array nums and an integer k as input and returns true if two distinct indices contain the same value within the allowed index distance; otherwise, it returns false.
+
+The solution uses a HashMap to store each element along with its most recent index while traversing the array. When a duplicate element is found, the program compares the current index with the stored index to check if the distance condition is satisfied. This approach runs in linear time O(n) and efficiently handles large arrays by avoiding unnecessary comparisons.
